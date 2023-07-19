@@ -12,24 +12,24 @@ const UserCard = () => {
                 <div className="row">
                     <div className="col-12 p-0">
                         <div className='firstUserCardWrapper'>
-                        <img src={logoImg} alt="" />
+                            <img src={logoImg} alt="" />
                         </div>
                     </div>
                 </div>
                 <div className="row">
                     <div className="col-12 p-0">
                         <div className='SecondUserCardWrapper'>
-                            <CardUp/>
+                            <CardUp />
                         </div>
                     </div>
                 </div>
                 <div className="row">
                     <div className="col-12 p-0">
                         <div className='ThirdUserCardWrapper'>
-                        {DetailsDownData.map((oItem, oIndex) => {
-                              return (
-                                <DetailsDown cls={"card-item"} oItem={oItem} oIndex={oIndex} />
-                              );
+                            {DetailsDownData.map((oItem, oIndex) => {
+                                return (
+                                    <DetailsDown cls={"card-item"} oItem={oItem} oIndex={oIndex} />
+                                );
                             })}
                         </div>
                     </div>

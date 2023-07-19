@@ -1,25 +1,27 @@
-.sideBarContainer{
+.sideBarContainer {
     padding: 36px;
-    /* background: linear-gradient(to top, #043260,#245C94); */
-    /* height: 100vh; */
 }
-.logo-img-container{
+
+.logo-img-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.logo-img-container img{
+
+.logo-img-container img {
     width: 85%;
     padding: 32px 24px;
     object-fit: cover;
 }
-.write-ul{
+
+.write-ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     padding-top: 16px;
 }
-.write-ul li{
+
+.write-ul li {
     display: flex;
     justify-content: start;
     padding: 12px 0;
