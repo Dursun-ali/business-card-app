@@ -10,8 +10,8 @@ import DetailsDown from "../components/DetailsDown";
 import DetailsDownData from "./DetailsDownData";
 
 const UserDetails = () => {
-    const params = useParams();
-    console.log(params);
+  const params = useParams();
+  console.log(params);
   return (
     <>
       <div className="UserContainer container-fluid">
