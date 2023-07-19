@@ -1,0 +1,30 @@
+.details-down-wrapper{
+    display: flex;
+    align-items: center;
+    background-color: #F6F6F6;
+    padding: 9px 0;
+    margin-bottom: 12px;
+}
+.down-details-icon{
+    padding: 8px;
+    border-radius: 50%;
+    background-color: #D8D8D8;
+    margin: 21px 36px 21px 84px;
+
+}
+.down-details-box{
+    padding-left:20px ;
+}
+.down-details-icon svg{
+    font-size: 24px;
+}
+.down-first-write{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--color-2);
+    padding-bottom: 4px;
+}
+.down-second-write{
+    font-weight: 400;
+    color: var(--color-4);
+}

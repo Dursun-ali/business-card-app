@@ -1,0 +1,150 @@
+.user-wrapper {
+    padding: 32px;
+    /* height: 100vh; */
+    background-color: #F5F5F5;
+}
+
+.user-box {
+    padding: 32px;
+    height: 100%;
+    background-color: #FFFFFF;
+}
+
+.user-header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 36px;
+}
+
+.filter-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--color-3);
+    border: 1px solid #245C94;
+    cursor: pointer;
+}
+
+.filter-icon svg {
+    width: 18px;
+    height: 20px;
+}
+
+.user-list-up {
+    padding: 14px 0px;
+    border-top: 1px solid #D8D8D8;
+    border-bottom: 1px solid #D8D8D8;
+}
+
+.user-list-write {
+    font-weight: 600;
+    color: #343434;
+}
+
+.sidebar-wrapper-container {
+    background: linear-gradient(to top, #043260, #245C94);
+
+}
+
+.search-box {
+    display: flex;
+    background-color: var(--color-3);
+    padding: 2px 14px 2px 16px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 22px;
+    border: 1px solid #245C94;
+}
+
+.search-box input {
+    outline: none;
+    border: none;
+    padding: 2px 4px;
+    background-color: var(--color-3);
+}
+
+.serach-icon-box {
+    padding: 5px;
+}
+
+.serach-icon-box svg {
+    width: 19px;
+    height: 19px;
+}
+
+::placeholder {
+    color: #343434;
+}
+
+.paginate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+.paginate li {
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 50%;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E2E2E2;
+    color: #848484;
+    cursor: pointer;
+    border: none;
+    margin: 0 4px;
+
+}
+.paginate  .selected {
+    background-color: var(--color-3);
+    color: #848484;
+    border: 1px solid #043260;
+}
+
+.paginate li a {
+    text-decoration: none;
+}
+
+.paginate .next {
+    background-color: #245C94;
+}
+
+.paginate .previous {
+    background-color: #245C94;
+
+}
+
+.paginate .previous a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+}
+
+.paginate .next a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paginate-container p{
+    display: flex;
+    justify-content: end;
+    color: var(--color-4);
+    margin: 0;
+    padding: 24px 0;
+}
+.paginate-section{
+    display: flex;
+    justify-content: end;
+    padding-bottom: 20px;
+}

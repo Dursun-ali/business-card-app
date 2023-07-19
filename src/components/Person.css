@@ -1,0 +1,54 @@
+.person-wrapper{
+    border-bottom: 1px solid #D8D8D8;
+}
+.person-write{
+    font-weight: 400;
+    color: #343434;
+}
+.status-box{
+    color: transparent;
+    width: 11px;
+    height: 11px;
+    background-color: #98A628;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+.person-write{
+    padding: 14px 0;
+}
+.person-edit-icon{
+background-color: #F3F8FC;
+border-radius: 50%;
+width: 26px;
+height: 26px;
+display: flex;
+align-items: center;
+justify-content: center;
+border: 1px solid #245C94;
+margin-right: 8px;
+cursor: pointer;
+}
+.person-edit-icon svg{
+    width: 9px;
+    height: 9px;
+}
+.person-delete-icon{
+background-color: #F3F8FC;
+border-radius: 50%;
+width: 26px;
+height: 26px;
+display: flex;
+align-items: center;
+justify-content: center;
+border: 1px solid #245C94;
+cursor: pointer;
+}
+.person-delete-icon svg{
+    width: 9px;
+    height: 9px;
+}
+.person-edit-delete-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
