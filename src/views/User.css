@@ -6,6 +6,7 @@
 
 .user-box {
     padding: 32px;
+    padding-bottom: 0;
     height: 100%;
     background-color: #FFFFFF;
 }
@@ -13,7 +14,7 @@
 .user-header {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 36px;
+    padding-bottom: 26px;
 }
 
 .filter-icon {
@@ -141,10 +142,10 @@
     justify-content: end;
     color: var(--color-4);
     margin: 0;
-    padding: 24px 0;
+    padding: 16px 0 8px;
 }
 .paginate-section{
     display: flex;
     justify-content: end;
-    padding-bottom: 20px;
+    padding-bottom: 31px;
 }

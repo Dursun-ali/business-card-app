@@ -1,0 +1,13 @@
+.ThirdUserCardWrapper,
+.firstUserCardWrapper{
+    padding: 40px 200px;
+    background: radial-gradient(100% 100% at 50% 0%, #2c6daf 0%, #06417c 100%);
+}
+.SecondUserCardWrapper{
+    padding: 40px 200px;
+    background: #033160;
+}
+.card-item{
+    padding: 15px 0 !important;
+    border-radius: 8px !important;
+}

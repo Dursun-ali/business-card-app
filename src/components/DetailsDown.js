@@ -1,11 +1,11 @@
 import React from 'react';
 import './DetailsDown.css'
 
-const DetailsDown = ({oItem,oIndex}) => {
+const DetailsDown = ({oItem,oIndex,cls}) => {
     return (
         <>
            
-                <div className='details-down-wrapper'>
+                <div className= {`details-down-wrapper ${cls}`}>
                     <div className='down-details-icon'>
                         {oItem.icon}
                     </div>

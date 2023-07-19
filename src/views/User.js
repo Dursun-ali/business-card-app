@@ -7,7 +7,7 @@ import UserData from './UserData';
 import ReactPaginate from 'react-paginate';
 
 const User = () => {
-    const itemsPerPage = 9;
+    const itemsPerPage = 10;
     const [itemOffset, setItemOffset] = useState(0);
     const endOffset = itemOffset + itemsPerPage;
     console.log(`Loading items from ${itemOffset} to ${endOffset}`);
@@ -24,7 +24,7 @@ const User = () => {
     return (
         <>
             <div className="UserContainer container-fluid">
-                <div className="row">
+                <div className="row" style={{minHeight:"100vh"}}>
                     <div className="col-sm-2 sidebar-wrapper-container">
                         <SideBar />
                     </div>
@@ -32,7 +32,7 @@ const User = () => {
                         <Navbar />
                         <div className="row">
                             <div className="col-12 p-0">
-                                <div className='user-wrapper'>
+                                <div className='user-wrapper' >
                                     <div className="user-box">
                                         <div className="user-header">
                                             <div className='search-box'>
@@ -86,6 +86,7 @@ const User = () => {
                                                 </div>
                                             </div>
                                         </div>
+                                        <div style={{minHeight:"550px"}}>
                                         {
                                             currentItems.map((oItem, oIndex) => {
                                                 return (
@@ -93,8 +94,10 @@ const User = () => {
                                                 )
                                             })
                                         }
+                                        </div>
+                                     
                                         <div className='paginate-container'>
-                                            <p>457 kayıt arasından 10 sonuç gösteriliyor.</p>
+                                            <p>{UserData.length} kayıt arasından {itemsPerPage} sonuç gösteriliyor.</p>
                                             <div className='paginate-section'>
                                             <ReactPaginate
                                             className='paginate'
