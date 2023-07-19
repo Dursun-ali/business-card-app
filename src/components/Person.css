@@ -30,7 +30,7 @@ cursor: pointer;
 }
 .person-edit-icon svg{
     width: 9px;
-    height: 9px;
+    height: 9px; 
 }
 .person-delete-icon{
 background-color: #F3F8FC;

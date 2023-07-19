@@ -1,6 +1,5 @@
 .user-wrapper {
     padding: 32px;
-    /* height: 100vh; */
     background-color: #F5F5F5;
 }
 
@@ -113,6 +112,8 @@
 
 .paginate li a {
     text-decoration: none;
+    padding: 3px 11px;
+    border-radius: 50%;
 }
 
 .paginate .next {
@@ -128,13 +129,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: red;
+    padding: 11px 11px;
+    border-radius: 50%;
 }
 
 .paginate .next a {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 11px 11px;
+    border-radius: 50%;
 }
 
 .paginate-container p{
