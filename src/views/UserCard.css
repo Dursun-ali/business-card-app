@@ -1,13 +1,86 @@
-.ThirdUserCardWrapper,
-.firstUserCardWrapper{
-    padding: 40px 200px;
+.userCardContainer {
+    position: relative;
+    height: 100vh;
     background: radial-gradient(100% 100% at 50% 0%, #2c6daf 0%, #06417c 100%);
 }
-.SecondUserCardWrapper{
-    padding: 40px 200px;
+
+.ThirdUserCardWrapper,
+.firstUserCardWrapper {
+    padding: 22px 160px;
+    background: radial-gradient(100% 100% at 50% 0%, #2c6daf 0%, #06417c 100%);
+}
+
+.SecondUserCardWrapper {
+    padding: 22px 160px;
     background: #033160;
 }
-.card-item{
+
+.card-item {
     padding: 15px 0 !important;
     border-radius: 8px !important;
+}
+
+@media (max-width : 1400px) {
+
+    .ThirdUserCardWrapper,
+    .firstUserCardWrapper {
+        padding: 18px 160px;
+    }
+
+    .SecondUserCardWrapper {
+        padding: 18px 160px;
+    }
+}
+
+@media (max-width : 1199.98px) {
+
+    .ThirdUserCardWrapper,
+    .firstUserCardWrapper {
+        padding: 22px 140px;
+    }
+
+    .SecondUserCardWrapper {
+        padding: 22px 140px;
+    }
+}
+
+@media (max-width : 991.98px) {
+
+    .ThirdUserCardWrapper,
+    .firstUserCardWrapper {
+        padding: 22px 110px;
+    }
+
+    .SecondUserCardWrapper {
+        padding: 22px 110px;
+    }
+}
+
+@media (max-width : 767.98px) {
+    .firstUserCardWrapper {
+        display: flex;
+        justify-content: center;
+        padding: 42px 60px !important;
+    }
+
+    .ThirdUserCardWrapper,
+    .firstUserCardWrapper {
+        padding: 22px 60px;
+    }
+
+    .SecondUserCardWrapper {
+        padding: 22px 60px;
+    }
+}
+
+@media (max-width : 575.98px) {
+
+    .ThirdUserCardWrapper,
+    .firstUserCardWrapper {
+        padding: 22px 16px;
+    }
+
+    .SecondUserCardWrapper {
+        padding: 22px 16px;
+    }
 }

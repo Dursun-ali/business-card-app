@@ -1,13 +1,23 @@
+.navbar-wrapper-container {
+    height: 100vh;
+}
+
 .user-wrapper {
+    height: calc(100vh - 62px);
     padding: 32px;
     background-color: #F5F5F5;
+    position: relative;
 }
 
 .user-box {
     padding: 32px;
     padding-bottom: 0;
-    height: 100%;
     background-color: #FFFFFF;
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    right: 24px;
+    bottom: 24px;
 }
 
 .user-header {
@@ -88,6 +98,7 @@
     padding: 0;
 
 }
+
 .paginate li {
     width: 30px;
     height: 30px;
@@ -104,7 +115,8 @@
     margin: 0 4px;
 
 }
-.paginate  .selected {
+
+.paginate .selected {
     background-color: var(--color-3);
     color: #848484;
     border: 1px solid #043260;
@@ -141,15 +153,117 @@
     border-radius: 50%;
 }
 
-.paginate-container p{
+.paginate-container p {
     display: flex;
     justify-content: end;
     color: var(--color-4);
     margin: 0;
     padding: 16px 0 8px;
 }
-.paginate-section{
+
+.paginate-section {
     display: flex;
     justify-content: end;
     padding-bottom: 31px;
+}
+
+.table-wrapper {
+    border-top: 1px solid #D8D8D8;
+}
+
+.table-wrapper th {
+    padding: 12px 8px;
+}
+
+
+@media (max-width : 1400px) {
+
+    .user-wrapper {
+        height: calc(100vh - 54.14px);
+        padding: 24px;
+        background-color: #F5F5F5;
+    }
+
+    .user-box {
+        padding: 24px;
+    }
+
+    .user-header {
+        padding-bottom: 23px;
+    }
+
+    .filter-icon {
+        width: 36px;
+        height: 36px;
+    }
+
+    .filter-icon svg {
+        width: 16px;
+        height: 18px;
+    }
+
+    .user-list-up {
+        padding: 13px 0px;
+    }
+
+    .search-box {
+        padding: 1px 11px 1px 12px;
+    }
+
+    .search-box input {
+        outline: none;
+        border: none;
+        padding: 1px 3px;
+        background-color: var(--color-3);
+    }
+
+}
+
+@media (max-width : 991.98px) {
+
+    .sidebar-wrapper-container {
+        display: none;
+    }
+
+
+}
+
+@media (max-width : 768px) {}
+
+@media (max-width : 575.98px) {
+    .search-box input {
+        padding: 0;
+    }
+
+    .user-box {
+        padding: 14px;
+    }
+
+    .search-box {
+        padding: 0px 4px 0px 4px;
+    }
+
+    .filter-icon {
+        margin-top: 2px;
+        width: 32px;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: var(--color-3);
+        border: 1px solid #245C94;
+        cursor: pointer;
+    }
+
+    .filter-icon svg {
+        width: 16px;
+        height: 18px;
+    }
+
+    .paginate-container p {
+        display: flex;
+        justify-content: center;
+        font-size: 15px;
+    }
 }

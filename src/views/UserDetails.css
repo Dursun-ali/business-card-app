@@ -1,11 +1,35 @@
+.navbar-details-wrapper-container{
+    height: 100vh;
+    background-color: #F5F5F5;
+}
+.user-details-wrapper-container{
+    height: calc(100vh - 62px);
+    padding: 32px;
+    background-color: #F5F5F5;
+    position: relative;
+}
 .person-link-wrapper{
     padding: 22px;
 }
 .user-details-box{
     padding: 0px;
     background-color: #FFFFFF;
+
+}
+.user-details-wrapper{
+      /* padding: 32px; */
+      padding-bottom: 0;
+      background-color: #FFFFFF;
+      position: absolute;
+      top: 24px;
+      left: 24px;
+      right: 24px;
+      bottom: 24px;  
 }
 .user-details-down{
     background-color: #FFFFFF;
-    padding: 28px 28px 71px 28px;
+    padding: 24px;
+}
+@media (max-width : 1400px) {
+
 }

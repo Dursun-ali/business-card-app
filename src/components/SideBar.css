@@ -1,5 +1,6 @@
 .sideBarContainer {
     padding: 36px;
+    height: 100%;
 }
 
 .logo-img-container {
@@ -9,7 +10,7 @@
 }
 
 .logo-img-container img {
-    width: 85%;
+    width: 90%;
     padding: 32px 24px;
     object-fit: cover;
 }
@@ -29,4 +30,44 @@
     margin-bottom: 6px;
     line-height: 19px;
     color: #ffffffa9;
+}
+@media (max-width : 1660px) {
+    .sideBarContainer {
+        padding: 16px;
+    }
+    .logo-img-container img {
+        width: 90%;
+        padding: 30px 20px;
+        object-fit: cover;
+    }
+}
+
+@media (max-width : 1400px) {
+    .sideBarContainer {
+        padding: 24px 0;
+    }
+    
+    .logo-img-container img {
+        width: 95%;
+        padding: 26px 19px;
+    }
+    .write-ul {
+        padding-top: 14px;
+    }
+    .write-ul li {
+        font-size: 14px;
+    }
+}
+@media (max-width : 1200px) {
+
+    .write-ul li {
+        font-size: 16px;
+    }
+    .logo-img-container img {
+        width: 90%;
+        padding: 26px 36px;
+    }
+    .write-ul li {
+        padding: 16px 0;
+    }
 }

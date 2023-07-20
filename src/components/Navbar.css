@@ -1,27 +1,112 @@
-.navbar-wrapper-container{
+.navbar-wrapper-container {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
-.navbar-write{
+
+.navbar-write {
     color: var(--color-2);
     font-weight: 600;
     padding: 16px 30px;
+    display: flex;
+    align-items: center;
 }
-.navbar-wrapper{
+
+.navbar-wrapper {
     display: flex;
     justify-content: space-between;
-    background-color: #FFFFFF;  
+    background-color: #FFFFFF;
 }
-.navbar-admin-wrapper{
+
+.navbar-admin-wrapper {
     display: flex;
     align-items: center;
     padding: 16px 30px;
 }
-.img-profile img{
+
+.img-profile img {
     width: 30px;
     height: 30px;
     margin-right: 8px;
 }
-.admin-write{
+
+.admin-write {
     color: var(--color-4);
     font-weight: 400;
+}
+
+.viewHeadlineIcon-wrapper {
+    padding: 2px 6px;
+    background-color: #F5F5F5;
+    border-radius: 4px;
+    display: none;
+}
+
+.navbar-wrapper-btn svg {
+    color: var(--color-2);
+}
+
+.navbar-box-sidebar {
+    height: 100vh;
+    padding: 24px 8px;
+    background: linear-gradient(to top, #043260, #245C94);
+
+}
+
+.logo-img-container-sidebar {
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-img-container-sidebar img {
+    width: 85%;
+}
+
+@media (max-width : 1400px) {
+    .navbar-write {
+        padding: 14px 24px;
+    }
+
+    .navbar-admin-wrapper {
+        padding: 14px 20px;
+    }
+
+    .img-profile img {
+        width: 25px;
+        height: 25px;
+        margin-right: 7px;
+    }
+}
+
+@media (max-width : 1200px) {
+    .navbar-write {
+        padding: 14px 24px;
+    }
+
+    .navbar-admin-wrapper {
+        padding: 14px 20px;
+    }
+
+    .img-profile img {
+        width: 25px;
+        height: 25px;
+        margin-right: 7px;
+    }
+}
+
+@media (max-width : 991.98px) {
+    .viewHeadlineIcon-wrapper {
+        display: block;
+    }
+}
+
+@media (max-width : 575.98px) {
+    .navbar-write {
+        padding: 16px 12px;
+    }
+
+    .navbar-admin-wrapper {
+        display: flex;
+        align-items: center;
+        padding: 16px 12px;
+    }
 }

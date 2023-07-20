@@ -3,12 +3,12 @@ import './UserCard.css'
 import logoImg from '../assets/logo.png'
 import CardUp from '../components/CardUp';
 import DetailsDownData from './DetailsDownData';
-import DetailsDown from '../components/DetailsDown';
+import CardDown from '../components/CardDown';
 
 const UserCard = () => {
     return (
         <>
-            <div className="userCardContainer container-fluid">
+            <div className='container-fluid userCardContainer'>
                 <div className="row">
                     <div className="col-12 p-0">
                         <div className='firstUserCardWrapper'>
@@ -28,7 +28,7 @@ const UserCard = () => {
                         <div className='ThirdUserCardWrapper'>
                             {DetailsDownData.map((oItem, oIndex) => {
                                 return (
-                                    <DetailsDown cls={"card-item"} oItem={oItem} oIndex={oIndex} />
+                                    <CardDown cls={"card-item"} oItem={oItem} oIndex={oIndex} />
                                 );
                             })}
                         </div>

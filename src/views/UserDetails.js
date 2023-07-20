@@ -16,15 +16,15 @@ const UserDetails = () => {
     <>
       <div className="UserContainer container-fluid">
         <div className="row">
-          <div className="col-sm-2 sidebar-wrapper-container">
+          <div className=" col-lg-3 col-xl-2 sidebar-wrapper-container">
             <SideBar />
           </div>
-          <div className="col-10 navbar-wrapper-container">
+          <div className=" col-lg-9 col-xl-10  navbar-details-wrapper-container">
             <Navbar />
             <div className="row">
               <div className="col-12 p-0">
-                <div className="user-wrapper">
-                  <div className="user-details-box">
+                <div className="user-details-wrapper-container">
+                  
                     <div className="user-details-wrapper">
                       <div className="row">
                         <div className="col-12">
@@ -51,7 +51,7 @@ const UserDetails = () => {
                         </div>
                       </div>
                     </div>
-                  </div>
+                  
                 </div>
               </div>
             </div>

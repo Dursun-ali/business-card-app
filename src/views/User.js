@@ -24,14 +24,15 @@ const User = () => {
     return (
         <>
             <div className="UserContainer container-fluid">
-                <div className="row" style={{minHeight:"100vh"}}>
-                    <div className="col-sm-2 sidebar-wrapper-container">
+                <div className="row">
+                    <div className="col-lg-3 col-xl-2 sidebar-wrapper-container">
                         <SideBar />
                     </div>
-                    <div className="col-10 navbar-wrapper-container">
+                    <div className="col-lg-9 col-xl-10 navbar-wrapper-container">
+                        <div className='navbar-down-wrapper'>
                         <Navbar />
                         <div className="row">
-                            <div className="col-12 p-0">
+                            <div className="col-12 p-0 ">
                                 <div className='user-wrapper' >
                                     <div className="user-box">
                                         <div className="user-header">
@@ -49,80 +50,85 @@ const User = () => {
                                                 </svg>
                                             </div>
                                         </div>
-                                        <div className='user-list-up'>
-                                            <div className="row">
-                                                <div className="col ms-3">
-                                                    <div className='user-list-write'>
-                                                        URL
-                                                    </div>
-                                                </div>
-                                                <div className="col">
-                                                    <div className='user-list-write'>
-                                                        Ad
-                                                    </div>
-                                                </div>
-                                                <div className="col">
-                                                    <div className='user-list-write'>
-                                                        Soyad
-                                                    </div>
-                                                </div>
-                                                <div className="col-3">
-                                                    <div className='user-list-write'>
-                                                        E-Posta
-                                                    </div>
-                                                </div>
-                                                <div className="col">
-                                                    <div className='user-list-write'>
-                                                        Görüntüleme
-                                                    </div>
-                                                </div>
-                                                <div className="col-1">
-                                                    <div className='user-list-write'>
-                                                        Durum
-                                                    </div>
-                                                </div>
-                                                <div className="col-1">
-                                                    
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div style={{minHeight:"550px"}}>
-                                        {
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr className='table-wrapper'>
+                                                        <th scope="col">
+                                                            <div className='user-list-write'>
+                                                                URL
+                                                            </div>
+                                                        </th>
+                                                        <th scope="col">
+                                                            <div className='user-list-write'>
+                                                                Ad
+                                                            </div>
+                                                        </th>
+                                                        <th scope="col">
+                                                            <div className='user-list-write'>
+                                                                Soyad
+                                                            </div>
+                                                        </th>
+                                                        <th scope="col-3">
+                                                            <div className='user-list-write'>
+                                                                E-Posta
+                                                            </div>
+                                                        </th>
+                                                        <th scope="col">
+                                                            <div className='user-list-write'>
+                                                                Görüntüleme
+                                                            </div>
+                                                        </th>
+                                                        <th scope="col-1">
+                                                            <div className='user-list-write'>
+                                                                Durum
+                                                            </div>
+                                                        </th>
+                                                        <th scope="col-1">
+
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                {
                                             currentItems.map((oItem, oIndex) => {
                                                 return (
                                                     <Person oItem={oItem} oIndex={oIndex} />
                                                 )
                                             })
                                         }
+                                                </table>
+                                                
                                         </div>
-                                     
-                                        <div className='paginate-container'>
+
+                                            <div className='paginate-container'>
                                             <p>{UserData.length} kayıt arasından {itemsPerPage} sonuç gösteriliyor.</p>
                                             <div className='paginate-section'>
-                                            <ReactPaginate
-                                            className='paginate'
-                                            breakLabel="..."
-                                            nextLabel={
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8" viewBox="0 0 11 8" fill="none">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.11368 4.50411C9.05669 4.55847 9.02528 4.58972 8.99236 4.61963C8.08423 5.44564 7.17383 6.26963 6.2708 7.10025C6.17903 7.18463 6.10048 7.30174 6.06973 7.41569C6.0105 7.63512 6.13812 7.84338 6.3518 7.94358C6.56372 8.0429 6.81455 8.01056 6.99359 7.85071C7.29711 7.57983 7.59589 7.30456 7.89666 7.03114C8.85058 6.16385 9.80455 5.29666 10.7584 4.42931C11.0814 4.1356 11.0805 3.8758 10.7558 3.58056C9.51032 2.44805 8.26437 1.31599 7.01976 0.182734C6.85939 0.0367252 6.67774 -0.0368587 6.44987 0.0183449C6.06763 0.110935 5.91466 0.518935 6.15602 0.803877C6.19253 0.846962 6.23592 0.885508 6.27838 0.924116C7.18334 1.7475 8.08864 2.57058 8.99374 3.39384C9.02642 3.42359 9.05762 3.45465 9.11361 3.50813C9.03513 3.50813 8.98626 3.50813 8.93736 3.50813C6.17514 3.50813 3.41291 3.50782 0.650682 3.50938C0.553192 3.50942 0.450468 3.51327 0.359245 3.54042C0.108582 3.61506 -0.0321608 3.84364 0.00627041 4.08854C0.0412235 4.31145 0.256108 4.48818 0.510526 4.5018C0.56621 4.5048 0.622169 4.50402 0.677991 4.50402C3.42748 4.50411 6.17693 4.50411 8.92641 4.50411C8.97686 4.50411 9.02731 4.50411 9.11368 4.50411Z" fill="white" />
-                                                </svg>
-                                            }
-                                            onPageChange={handlePageClick}
-                                            pageRangeDisplayed={5}
-                                            pageCount={pageCount}
-                                            previousLabel={
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8" viewBox="0 0 11 8" fill="none">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.88632 4.50411C1.94331 4.55847 1.97472 4.58972 2.00764 4.61963C2.91577 5.44564 3.82617 6.26963 4.7292 7.10025C4.82097 7.18463 4.89952 7.30174 4.93027 7.41569C4.9895 7.63512 4.86188 7.84338 4.6482 7.94358C4.43628 8.0429 4.18545 8.01056 4.00641 7.85071C3.70289 7.57983 3.40411 7.30456 3.10334 7.03114C2.14942 6.16385 1.19545 5.29666 0.24163 4.42931C-0.0814193 4.1356 -0.0805239 3.8758 0.244213 3.58056C1.48968 2.44805 2.73563 1.31599 3.98024 0.182734C4.14061 0.0367252 4.32226 -0.0368587 4.55013 0.0183449C4.93237 0.110935 5.08534 0.518935 4.84398 0.803877C4.80747 0.846962 4.76408 0.885508 4.72162 0.924116C3.81666 1.7475 2.91136 2.57058 2.00626 3.39384C1.97358 3.42359 1.94238 3.45465 1.88639 3.50813C1.96487 3.50813 2.01374 3.50813 2.06264 3.50813C4.82486 3.50813 7.58709 3.50782 10.3493 3.50938C10.4468 3.50942 10.5495 3.51327 10.6408 3.54042C10.8914 3.61506 11.0322 3.84364 10.9937 4.08854C10.9588 4.31145 10.7439 4.48818 10.4895 4.5018C10.4338 4.5048 10.3778 4.50402 10.322 4.50402C7.57252 4.50411 4.82307 4.50411 2.07359 4.50411C2.02314 4.50411 1.97269 4.50411 1.88632 4.50411Z" fill="white" />
-                                                </svg>
-                                            }
-                                            renderOnZeroPageCount={null}
-                                        />
+                                                <ReactPaginate
+                                                    className='paginate'
+                                                    breakLabel="..."
+                                                    nextLabel={
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8" viewBox="0 0 11 8" fill="none">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.11368 4.50411C9.05669 4.55847 9.02528 4.58972 8.99236 4.61963C8.08423 5.44564 7.17383 6.26963 6.2708 7.10025C6.17903 7.18463 6.10048 7.30174 6.06973 7.41569C6.0105 7.63512 6.13812 7.84338 6.3518 7.94358C6.56372 8.0429 6.81455 8.01056 6.99359 7.85071C7.29711 7.57983 7.59589 7.30456 7.89666 7.03114C8.85058 6.16385 9.80455 5.29666 10.7584 4.42931C11.0814 4.1356 11.0805 3.8758 10.7558 3.58056C9.51032 2.44805 8.26437 1.31599 7.01976 0.182734C6.85939 0.0367252 6.67774 -0.0368587 6.44987 0.0183449C6.06763 0.110935 5.91466 0.518935 6.15602 0.803877C6.19253 0.846962 6.23592 0.885508 6.27838 0.924116C7.18334 1.7475 8.08864 2.57058 8.99374 3.39384C9.02642 3.42359 9.05762 3.45465 9.11361 3.50813C9.03513 3.50813 8.98626 3.50813 8.93736 3.50813C6.17514 3.50813 3.41291 3.50782 0.650682 3.50938C0.553192 3.50942 0.450468 3.51327 0.359245 3.54042C0.108582 3.61506 -0.0321608 3.84364 0.00627041 4.08854C0.0412235 4.31145 0.256108 4.48818 0.510526 4.5018C0.56621 4.5048 0.622169 4.50402 0.677991 4.50402C3.42748 4.50411 6.17693 4.50411 8.92641 4.50411C8.97686 4.50411 9.02731 4.50411 9.11368 4.50411Z" fill="white" />
+                                                        </svg>
+                                                    }
+                                                    onPageChange={handlePageClick}
+                                                    pageRangeDisplayed={5}
+                                                    pageCount={pageCount}
+                                                    previousLabel={
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8" viewBox="0 0 11 8" fill="none">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.88632 4.50411C1.94331 4.55847 1.97472 4.58972 2.00764 4.61963C2.91577 5.44564 3.82617 6.26963 4.7292 7.10025C4.82097 7.18463 4.89952 7.30174 4.93027 7.41569C4.9895 7.63512 4.86188 7.84338 4.6482 7.94358C4.43628 8.0429 4.18545 8.01056 4.00641 7.85071C3.70289 7.57983 3.40411 7.30456 3.10334 7.03114C2.14942 6.16385 1.19545 5.29666 0.24163 4.42931C-0.0814193 4.1356 -0.0805239 3.8758 0.244213 3.58056C1.48968 2.44805 2.73563 1.31599 3.98024 0.182734C4.14061 0.0367252 4.32226 -0.0368587 4.55013 0.0183449C4.93237 0.110935 5.08534 0.518935 4.84398 0.803877C4.80747 0.846962 4.76408 0.885508 4.72162 0.924116C3.81666 1.7475 2.91136 2.57058 2.00626 3.39384C1.97358 3.42359 1.94238 3.45465 1.88639 3.50813C1.96487 3.50813 2.01374 3.50813 2.06264 3.50813C4.82486 3.50813 7.58709 3.50782 10.3493 3.50938C10.4468 3.50942 10.5495 3.51327 10.6408 3.54042C10.8914 3.61506 11.0322 3.84364 10.9937 4.08854C10.9588 4.31145 10.7439 4.48818 10.4895 4.5018C10.4338 4.5048 10.3778 4.50402 10.322 4.50402C7.57252 4.50411 4.82307 4.50411 2.07359 4.50411C2.02314 4.50411 1.97269 4.50411 1.88632 4.50411Z" fill="white" />
+                                                        </svg>
+                                                    }
+                                                    renderOnZeroPageCount={null}
+                                                />
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        </div>
+
                     </div>
                 </div>
             </div >

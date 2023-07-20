@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     background-color: #F6F6F6;
-    padding: 9px 0;
+    padding: 5px 0;
     margin-bottom: 12px;
 }
 .down-details-icon{
@@ -28,3 +28,7 @@
     font-weight: 400;
     color: var(--color-4);
 }
+@media (max-width : 1400px) {
+
+}
+
