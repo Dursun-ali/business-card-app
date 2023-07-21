@@ -63,6 +63,7 @@
 }
 
 .table-responsive {
+    position: relative;
     max-height: calc(100vh - 302px);
     overflow-y: auto;
 }

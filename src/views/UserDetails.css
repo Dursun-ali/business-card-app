@@ -2,7 +2,7 @@
     height: 100vh;
 }
 .user-details-wrapper-container{
-    height: calc(100vh - 62px);
+    height: calc(100vh - 58px);
     padding: 32px;
     background-color: #F5F5F5;
     position: relative;
@@ -34,12 +34,29 @@
     background-color: #FFFFFF;
     padding: 24px;
 }
-@media (max-width : 1299.98px) {
+.userDeatails-responsive{
+    max-height: calc(100vh - 182px);
+    overflow-y: auto;
+}
+@media(max-width: 1444.98px) {
+    .user-details-wrapper-container{
+        height: calc(100vh - 63px);
+    }
+}
+@media(max-width: 1399.98px) {
+    .user-details-wrapper-container{
+        height: calc(100vh - 54px);
+    }
+}
+@media (max-width : 1199.98px) {
     .user-details-wrapper-container{
         padding: 24px;
     }
     .person-link-wrapper{
         padding: 18px;
+    }
+    .user-details-wrapper-container{
+        height: calc(100vh - 54px);
     }
 
 }
@@ -49,5 +66,13 @@
     }
     .person-link-wrapper a{
         font-size: 14px;
+    }
+    .user-details-wrapper-container{
+        height: calc(100vh - 54px);
+    }
+}   
+@media (max-width : 575.98px) {
+    .user-details-wrapper-container{
+        height: calc(100vh - 58px);
     }
 }   

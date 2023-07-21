@@ -1,9 +1,8 @@
 import React from 'react';
 import './Navbar.css'
-import ViewHeadlineIcon from '@mui/icons-material/ViewHeadline';
+import MenuIcon from '@mui/icons-material/Menu';
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
-import Button from '@mui/material/Button';
 import List from '@mui/material/List';
 import logoImg from '../assets/logo.png'
 
@@ -37,7 +36,7 @@ const Navbar = () => {
             </List>
             <List className='navbar-write-sidebar'>
                 <ul class="write-ul">
-                    <li style={{backgroundColor: "rgb(22, 73, 124)",color: "rgb(255, 255, 255)"}}><span class="me-4 ms-3"></span> Kartvizit Yönetimi</li>
+                    <li style={{ backgroundColor: "rgb(22, 73, 124)", color: "rgb(255, 255, 255)" }}><span class="me-4 ms-3"></span> Kartvizit Yönetimi</li>
                     <li><span class="me-4 ms-3"></span>Admin Yönetimi</li>
                     <li><span class="me-4 ms-3"></span>Ayarlar</li></ul>
             </List>
@@ -47,15 +46,12 @@ const Navbar = () => {
         <div>
             <div className='navbar-wrapper'>
                 <div className='d-flex align-items-center'>
-                    <div className='navbar-write'>
-                        PERSONEL LİSTESİ
-                    </div>
+
                     {['left'].map((anchor) => (
                         <React.Fragment key={anchor}>
-                                <div className='viewHeadlineIcon-wrapper' onClick={toggleDrawer(anchor, true)}>
-                                    <ViewHeadlineIcon />
-                                </div>
-                            
+                            <div className='viewHeadlineIcon-wrapper' onClick={toggleDrawer(anchor, true)}>
+                                <MenuIcon sx={{color:"#F6F6F6"}}/>
+                            </div>
                             <Drawer
                                 anchor={anchor}
                                 open={state[anchor]}
@@ -65,7 +61,8 @@ const Navbar = () => {
                             </Drawer>
                         </React.Fragment>
                     ))}
-                    <div className='d-flex align-items-center justify-content-center'>
+                    <div className='navbar-write'>
+                        PERSONEL LİSTESİ
                     </div>
                 </div>
                 <div className='navbar-admin-wrapper'>

@@ -52,7 +52,7 @@ const User = () => {
                                         </div>
                                         <div class="table-responsive">
                                             <table class="table">
-                                                <thead>
+                                                <thead className='table-headers'>
                                                     <tr className='table-wrapper'>
                                                         <th scope="col">
                                                             <div className='user-list-write'>

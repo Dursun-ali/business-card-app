@@ -22,7 +22,6 @@ const UserDetails = () => {
             <div className="row">
               <div className="col-12 p-0">
                 <div className="user-details-wrapper-container">
-                  
                     <div className="user-details-wrapper">
                       <div className="row">
                         <div className="col-12">
@@ -32,8 +31,9 @@ const UserDetails = () => {
                           </div>
                         </div>
                       </div>
+                      <div className="userDeatails-responsive">
                       <div className="row">
-                        <div className="col-12">
+                        <div className="col-12 p-0">
                           <DetailsUp />
                         </div>
                       </div>
@@ -48,6 +48,8 @@ const UserDetails = () => {
                           </div>
                         </div>
                       </div>
+                      </div>
+
                     </div>
                   
                 </div>
