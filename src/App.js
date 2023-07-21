@@ -1,6 +1,4 @@
 import './App.css';
-import SideBar from './components/SideBar';
-import Navbar from './components/Navbar';
 import {
   BrowserRouter,
   Link,
@@ -10,6 +8,7 @@ import {
 import User from './views/User';
 import UserDetails from './views/UserDetails';
 import UserCard from './views/UserCard';
+import Page404 from './views/Page404';
 
 function App() {
   return (
@@ -18,6 +17,7 @@ function App() {
         <Route path="/" element={<User />} />
         <Route path="/UserDetails/:id" element={<UserDetails />} />
         <Route path="/UserCard" element={<UserCard />} />
+        <Route path="/*" element={<Page404 />} />
       </Routes>
   </BrowserRouter>
   );

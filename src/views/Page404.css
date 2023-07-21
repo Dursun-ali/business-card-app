@@ -1,0 +1,145 @@
+.main-error-container {
+    height: 100vh;
+    padding: 0 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.error-container {
+    width: 87%;
+    margin: 0 auto;
+}
+
+.error-write-container {
+    padding: 120px 0px;
+}
+
+.error-first-write {
+    text-align: center;
+    font-size: 80px;
+    font-weight: 700;
+    margin: 0;
+    padding-bottom: 16px;
+    color: var(--color-2);
+}
+
+.error-second-write {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 500;
+    margin: 0;
+    padding-bottom: 32px;
+    color: var(--color-2);
+}
+
+.error-btn-box {
+    display: flex;
+    justify-content: center;
+}
+
+.error-btn {
+    border: none;
+    padding: 14px 30px;
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-weight: 400;
+    background-color: var(--color-1);
+}
+
+@media(max-width :1500px) {
+    .error-write-container {
+        padding: 80px 0px;
+    }
+
+    .error-first-write {
+        font-size: 63px;
+        padding-bottom: 16px;
+
+    }
+
+    .error-second-write {
+        font-size: 21px;
+        padding-bottom: 32px;
+
+    }
+
+    .error-btn {
+        padding: 10px 24px;
+    }
+}
+
+@media(max-width :1199.98px) {
+    .error-write-container {
+        padding: 40px 0px;
+    }
+
+    .error-first-write {
+        font-size: 48px;
+        padding-bottom: 16px;
+    }
+
+    .error-second-write {
+        font-size: 18px;
+        padding-bottom: 24px;
+
+    }
+
+    .error-btn {
+        padding: 10px 24px;
+    }
+}
+
+@media(max-width :991.98px) {
+    .main-error-container {
+        padding: 0 80px;
+    }
+
+    .error-container {
+        width: 100%;
+    }
+
+    .error-write-container {
+        padding: 20px 0px;
+    }
+
+    .error-first-write {
+        font-size: 42px;
+        padding-bottom: 16px;
+    }
+
+    .error-second-write {
+        font-size: 17px;
+        padding-bottom: 18px;
+    }
+
+    .error-btn {
+        padding: 6px 18px;
+        font-size: 15px;
+    }
+}
+
+@media(max-width :767.98px) {
+    .main-error-container {
+        padding: 0 40px;
+    }
+
+    .error-write-container {
+        padding: 20px 0px;
+    }
+
+    .error-first-write {
+        font-size: 34px;
+        padding-bottom: 16px;
+    }
+
+    .error-second-write {
+        font-size: 15px;
+        padding-bottom: 15px;
+    }
+
+    .error-btn {
+        padding: 4px 15px;
+        font-size: 14px;
+    }
+}

@@ -26,7 +26,7 @@ const UserDetails = () => {
                       <div className="row">
                         <div className="col-12">
                           <div className="person-link-wrapper">
-                            <Link>Personel Listesi </Link> <span> {">"} </span>
+                            <Link className="person-list" to="/">Personel Listesi </Link> <span> {">"} </span>
                             <Link style={{color:"#245C94",fontWeight:"600"}}>Personel Kart Detayları</Link>
                           </div>
                         </div>

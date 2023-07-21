@@ -21,7 +21,6 @@
     font-weight: 400;
 }
 .user-details-wrapper{
-      /* padding: 32px; */
       padding-bottom: 0;
       background-color: #FFFFFF;
       position: absolute;
@@ -37,6 +36,12 @@
 .userDeatails-responsive{
     max-height: calc(100vh - 182px);
     overflow-y: auto;
+}
+.person-list:hover{
+    font-weight: 600;
+    color: var(--color-4);
+    border-bottom: 1px solid var(--color-4) !important;
+    transition: 0.1s ease;
 }
 @media(max-width: 1444.98px) {
     .user-details-wrapper-container{

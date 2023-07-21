@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, {useState } from 'react';
 import './User.css'
 import SideBar from '../components/SideBar';
 import Navbar from '../components/Navbar';
