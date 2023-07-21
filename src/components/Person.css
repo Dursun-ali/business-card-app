@@ -1,15 +1,18 @@
-.person-wrapper{
+.person-wrapper {
     border-bottom: 1px solid #D8D8D8;
 }
-.person-write{
+
+.person-write {
     font-weight: 400;
     color: #343434;
     white-space: nowrap;
 }
+
 .table>:not(:first-child) {
     border-top: none;
 }
-.status-box{
+
+.status-box {
     color: transparent;
     width: 11px;
     height: 11px;
@@ -17,81 +20,52 @@
     border-radius: 50%;
     margin-right: 6px;
 }
-/* .person-write{
-    padding: 14px 0;
-} */
-.person-edit-icon{
-background-color: #F3F8FC;
-border-radius: 50%;
-width: 26px;
-height: 26px;
-display: flex;
-align-items: center;
-justify-content: center;
-border: 1px solid #245C94;
-margin-right: 8px;
-cursor: pointer;
+
+.person-edit-icon {
+    background-color: #F3F8FC;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #245C94;
+    margin-right: 8px;
+    cursor: pointer;
 }
-.person-edit-icon svg{
-    width: 9px;
-    height: 9px; 
+
+.person-edit-icon svg {
+    width: 12px;
+    height: 12px;
 }
-.person-delete-icon{
-background-color: #F3F8FC;
-border-radius: 50%;
-width: 26px;
-height: 26px;
-display: flex;
-align-items: center;
-justify-content: center;
-border: 1px solid #245C94;
-cursor: pointer;
+
+.person-delete-icon {
+    background-color: #F3F8FC;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #245C94;
+    cursor: pointer;
 }
-.person-delete-icon svg{
-    width: 9px;
-    height: 9px;
+
+.person-delete-icon svg {
+    width: 12px;
+    height: 12px;
 }
-.person-edit-delete-box{
+
+.person-edit-delete-box {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.table-responsive{
-    max-height: calc(100vh - 302px);
+
+.table-responsive {
     overflow-y: auto;
-    min-height: 525px;
 }
-.table-body-wrapper td{
+
+.table-body-wrapper td {
     padding: 12px 8px;
 }
-@media (max-width : 1450px) {
-    .table-responsive{
-        min-height: 520px;
-
-    }
-}
-@media (max-width : 1400px) {
-    .table-responsive{
-        min-height: 525px;
-
-    }
-}
-@media (max-width : 1200px) {
-    .table-responsive{
-        min-height: 540px;
-
-    }
-}
-@media (max-width : 992px) {
-    .table-responsive{
-        min-height: 530px;
-
-    }
-}
-@media (max-width : 768px) {
-
-}
-@media (max-width : 576px) {
-
-}
-

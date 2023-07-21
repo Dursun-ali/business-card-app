@@ -23,7 +23,7 @@
 .user-header {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 26px;
+    padding-bottom: 20px;
 }
 
 .filter-icon {
@@ -152,6 +152,11 @@
     padding: 11px 11px;
     border-radius: 50%;
 }
+.paginate-container{
+    position: absolute;
+    bottom: 0;
+    right: 24px;
+}
 
 .paginate-container p {
     display: flex;
@@ -164,7 +169,7 @@
 .paginate-section {
     display: flex;
     justify-content: end;
-    padding-bottom: 31px;
+    padding-bottom: 16px;
 }
 
 .table-wrapper {
@@ -174,7 +179,6 @@
 .table-wrapper th {
     padding: 12px 8px;
 }
-
 
 @media (max-width : 1400px) {
 
@@ -220,12 +224,9 @@
 }
 
 @media (max-width : 991.98px) {
-
     .sidebar-wrapper-container {
         display: none;
     }
-
-
 }
 
 @media (max-width : 768px) {}

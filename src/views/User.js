@@ -97,7 +97,6 @@ const User = () => {
                                             })
                                         }
                                                 </table>
-                                                
                                         </div>
 
                                             <div className='paginate-container'>
