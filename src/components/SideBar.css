@@ -30,7 +30,12 @@
     margin-bottom: 6px;
     line-height: 19px;
     color: #ffffffa9;
+    cursor: pointer;
 }
+.write-ul :hover{
+    color: #FFFFFF;
+    background-color: #1f6ab64b;
+} 
 @media (max-width : 1660px) {
     .sideBarContainer {
         padding: 16px;

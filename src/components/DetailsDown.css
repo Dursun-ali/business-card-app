@@ -30,14 +30,14 @@
 }
 @media (max-width : 1450.98px){
     .down-details-icon{
-        margin: 21px 46px 21px 76px;
+        margin: 21px 46px 21px 64px;
     
     }
 }
 @media (max-width : 1199.98px) {
     .down-details-icon{
         padding: 6px;
-        margin: 21px 36px 21px 52px;
+        margin: 21px 36px 21px 42px;
     }
     .down-first-write{
         font-size: 18px;
@@ -50,7 +50,7 @@
 @media (max-width : 767.98px) {
     .down-details-icon{
         padding: 6px;
-        margin: 21px 24px 21px 40px;
+        margin: 21px 24px 21px 27px;
     }
     .details-down-wrapper{
         padding: 3px 0;
