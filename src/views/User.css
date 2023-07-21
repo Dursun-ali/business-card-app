@@ -152,11 +152,11 @@
     padding: 11px 11px;
     border-radius: 50%;
 }
-.paginate-container{
+/* .paginate-container{
     position: absolute;
     bottom: 0;
     right: 24px;
-}
+} */
 
 .paginate-container p {
     display: flex;
