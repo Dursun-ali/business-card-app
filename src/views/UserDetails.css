@@ -1,9 +1,17 @@
 .navbar-details-wrapper-container{
     height: 100vh;
+    position: relative;
+}
+.border-line{
+    position: absolute;
+    top: 62px;
+    left: 0;
+    right: 0;
+    border: 1px solid #F5F5F5;
 }
 .user-details-wrapper-container{
-    height: calc(100vh - 58px);
-    padding: 32px;
+    /* height: calc(100vh - 58px);
+    padding: 32px; */
     background-color: #F5F5F5;
     position: relative;
 }
@@ -24,10 +32,10 @@
       padding-bottom: 0;
       background-color: #FFFFFF;
       position: absolute;
-      top: 24px;
-      left: 24px;
-      right: 24px;
-      bottom: 24px;  
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;  
 }
 .user-details-down{
     background-color: #FFFFFF;
@@ -38,31 +46,44 @@
     overflow-y: auto;
 }
 .person-list:hover{
-    font-weight: 600;
-    color: var(--color-4);
+    /* color: var(--color-4); */
     border-bottom: 1px solid var(--color-4) !important;
     transition: 0.1s ease;
 }
 @media(max-width: 1444.98px) {
-    .user-details-wrapper-container{
+    /* .user-details-wrapper-container{
         height: calc(100vh - 63px);
+    } */
+    .border-line{
+        position: absolute;
+        top: 62px;
+        left: 0;
+        right: 0;
+        border: 1px solid #F5F5F5;
     }
 }
 @media(max-width: 1399.98px) {
-    .user-details-wrapper-container{
+    /* .user-details-wrapper-container{
         height: calc(100vh - 54px);
+    } */
+    .border-line{
+        position: absolute;
+        top: 54.14px;
+        left: 0;
+        right: 0;
+        border: 1px solid #F5F5F5;
     }
 }
 @media (max-width : 1199.98px) {
-    .user-details-wrapper-container{
+    /* .user-details-wrapper-container{
         padding: 24px;
-    }
+    } */
     .person-link-wrapper{
         padding: 18px;
     }
-    .user-details-wrapper-container{
+    /* .user-details-wrapper-container{
         height: calc(100vh - 54px);
-    }
+    } */
 
 }
 @media (max-width : 767.98px) {
@@ -72,12 +93,19 @@
     .person-link-wrapper a{
         font-size: 14px;
     }
-    .user-details-wrapper-container{
+    /* .user-details-wrapper-container{
         height: calc(100vh - 54px);
-    }
+    } */
 }   
 @media (max-width : 575.98px) {
-    .user-details-wrapper-container{
+    /* .user-details-wrapper-container{
         height: calc(100vh - 58px);
+    } */
+    .border-line{
+        position: absolute;
+        top: 58.14px;
+        left: 0;
+        right: 0;
+        border: 1px solid #F5F5F5;
     }
 }   
