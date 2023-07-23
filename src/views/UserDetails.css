@@ -7,7 +7,7 @@
     top: 62px;
     left: 0;
     right: 0;
-    border: 1px solid #F5F5F5;
+    border: 1px solid #f5f5f5d2;
 }
 .user-details-wrapper-container{
     /* height: calc(100vh - 58px);
@@ -55,11 +55,7 @@
         height: calc(100vh - 63px);
     } */
     .border-line{
-        position: absolute;
         top: 62px;
-        left: 0;
-        right: 0;
-        border: 1px solid #F5F5F5;
     }
 }
 @media(max-width: 1399.98px) {
@@ -67,11 +63,7 @@
         height: calc(100vh - 54px);
     } */
     .border-line{
-        position: absolute;
         top: 54.14px;
-        left: 0;
-        right: 0;
-        border: 1px solid #F5F5F5;
     }
 }
 @media (max-width : 1199.98px) {
@@ -102,10 +94,6 @@
         height: calc(100vh - 58px);
     } */
     .border-line{
-        position: absolute;
         top: 58.14px;
-        left: 0;
-        right: 0;
-        border: 1px solid #F5F5F5;
     }
 }   
